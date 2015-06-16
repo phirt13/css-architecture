@@ -1,0 +1,63 @@
+/*--------------App Layout-------------------*/
+body {
+  width: 100%;
+}
+
+nav, .component-section {
+  overflow: auto;
+}
+
+hr {
+  margin-top: .9em;
+}
+
+/*--------------Header Layout-------------------*/
+.app-header h1 {
+  margin-bottom: 0;
+}
+
+/*--------------Nav Layout-------------------*/
+.nav-horizontal li {
+  float: left;
+}
+.nav-vertical li {
+  width: 7em;
+}
+
+/*--------------Contact Layout-------------------*/
+form {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+label, input {
+  margin: .9em 0 0 0;
+
+}
+textarea {
+  width: 99%;
+  min-height: 10em;
+  margin-bottom: .9em
+}
+.subscribe-form {
+  text-align: center;
+}
+
+/*--------------Blog Layout-------------------*/
+.blog-post {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blog-image {
+  margin-top: 3em;
+  margin-bottom: .5em;
+}
+
+.blog-header h2 {
+  margin: .1em;
+}
+
+.blog-written-content {
+  margin: 1em 0 2em 0;

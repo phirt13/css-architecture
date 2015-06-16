@@ -45,16 +45,12 @@
   list-style: none;
 }
 
-.nav-vertical .active {
-  border: .1em solid rgba(210, 128, 73, 1.0);
-}
-
 /*--------------Contact Module-------------------*/
 .subscribe-form input{
   display: inline-block
 }
 
-#subscribe {
+#subscribe-btn {
   display: inline-block;
   padding: .2em .5em .2em .5em;
   border-radius: 0;

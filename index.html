@@ -9,73 +9,42 @@
 
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="css/layout.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/module.css">
+    <link type="text/css" rel="stylesheet" href="css/state.css">
   </head>
 
 <!-- CONTENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <body>
-    <header class="stylesheet-header" role="banner">
-      <h1>RED PANDA</h1>
-      <h2 >Css Architecture</h2>
-      <hr/>
+
+    <header role="banner">
+       <section class="app-header">
+        <img alt="Red Panda" class="main-logo" id="" src="pics/red_panda.png"/>
+        <h1>RED PANDA</h1>
+        <section class="nav-horizontal">
+          <nav>
+            <ul>
+              <li>Contact</li>
+              <li>Blog</li>
+              <li>About</li>
+              <li class="active">Donate</li>
+              <li>Home</li>
+            </ul>
+          </nav>
+        </section>
+      </section>
     </header>
+
     <main role="main">
-      <h3>Headers</h3>
-      <section class="component-section">
-        <h5>App Header</h5>
-          <section class="component-section">
-            <section class="app-header">
-              <img alt="Red Panda" class="main-logo" id="" src="pics/red_panda.png"/>
-              <h1>RED PANDA</h1>
-            </section>
-        </section>
-        <h5>Page Header</h5>
-        <section class="component-section">
-          <section class="page-header">
-            <h2>Welcome</h2>
-            <h5>This is some description about the page</h5>
-          </section>
-        </section>
+      <section class="page-header">
+        <h2>Welcome</h2>
+        <h5>This is some description about the page</h5>
       </section>
-      <h3>Navigation</h3>
-      <section class="component-section">
-        <h5>Horizontal</h5>
-        <section class="component-section">
-          <section class="nav-horizontal">
-            <nav>
-              <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>About</li>
-                <li class="active">Contact</li>
-                <li>Cart</li>
-              </ul>
-            </nav>
-          </section>
-        </section>
-        <h5>Vertical</h5>
-        <section class="component-section">
-          <section class="nav-vertical">
-            <nav>
-              <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>About</li>
-                <li class="active">Contact</li>
-                <li>Cart</li>
-              </ul>
-            </nav>
-          </section>
-        </section>
-      </section>
-      <h3>Contact Forms</h3>
-      <section class="component-section">
+      <h3>Contact Forms</h3
         <h5>Comment Form</h5>
-        <section class="component-section">
           <form role="contact form">
             <fieldset>
               <label for="name">Name</label>
@@ -88,19 +57,14 @@
               <button id="submit-contact">Send</button>
             </fieldset>
           </form>
-        </section>
         <h5>Subscribe Form</h5>
-        <section class="component-section">
           <form class="subscribe-form" role="subscribe form" >
             <fieldset>
               <input aria-label="Email Field" type="email" value="" placeholder="you@gmail.com" required/>
-              <button id="subscribe">Stay Informed</button>
+              <button id="subscribe-btn">Stay Informed</button>
             </fieldset>
           </form>
-        </section>
-      </section>
       <h3>Blog</h3>
-      <section class="component-section">
         <article class="blog-post">
           <section class="blog-header">
           <img class="blog-image" id="" src="pics/redpanda.jpg"/>
@@ -126,9 +90,7 @@
           </section>
         </article>
       </section>
-      <section class="component-section">
         <h3>Footer</h3>
-        <section class="component-section">
     </main>
   </body>
 </html>

@@ -108,6 +108,9 @@ body {
   width: 100%;
 }
 
+nav {
+  margin-bottom:
+}
 nav, .component-section {
   overflow: auto;
 }
@@ -121,9 +124,12 @@ hr {
   margin-bottom: 0;
 }
 
+.page-header {
+  text-align: center;
+}
 /*--------------Nav Layout-------------------*/
 .nav-horizontal li {
-  float: left;
+  float: right;
 }
 .nav-vertical li {
   width: 7em;
@@ -140,7 +146,7 @@ label, input {
 
 }
 textarea {
-  width: 99%;
+  width: 100%;
   min-height: 10em;
   margin: .9em 0 .9em 0;
 }

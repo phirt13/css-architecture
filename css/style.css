@@ -15,7 +15,7 @@ h2 {
 }
 
 hr {
-  border-top: 1px solid rgba(54, 48, 49, 1.0);
+  border-top: 1px solid rgba(54, 48, 49, 0.2);
   border-right: none;
   border-bottom: none;
   border-left: none;
@@ -122,6 +122,10 @@ input, label {
 
 label {
   font-size: 1.1em
+}
+
+textarea {
+  border: .1em solid rgba(54, 48, 49, 0.2);
 }
 
 .subscribe-form input{

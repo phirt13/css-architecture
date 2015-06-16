@@ -1,0 +1,21 @@
+/*--------------App State-------------------*/
+button:hover {
+  border: .1em solid rgba(178, 80, 36, 0.5);
+  background-color: rgba(178, 80, 36, 0.5);
+}
+
+/*--------------Nav State-------------------*/
+nav li:hover {
+  /*font-weight: 500;*/
+  color: white;
+  background-color: rgba(210, 128, 73, 1.0);
+  border-top: .1em solid rgba(178, 80, 36, 1.0);
+  border-left: .1em solid rgba(178, 80, 36, 1.0);
+  border-right: .1em solid rgba(178, 80, 36, 1.0);
+}
+
+.nav-horizontal .active {
+  border-top: .1em solid rgba(178, 80, 36, 1.0);
+  border-left: .1em solid rgba(178, 80, 36, 1.0);
+  border-right: .1em solid rgba(178, 80, 36, 1.0);
+}

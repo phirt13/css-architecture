@@ -1,0 +1,86 @@
+/*--------------App Module-------------------*/
+/*This following style rule is for the stylesheet */
+.component-section {
+  padding: 3em;
+  border: .1em solid rgba(0, 0, 0, 0.2);
+}
+
+/*--------------Header Module-------------------*/
+.app-header {
+  background-color: rgba(54, 48, 49, 1.0);
+  padding: 1em 0 0 1em;
+  border-bottom: .2em solid rgba(178, 80, 36, 1.0);
+}
+
+.app-header h1 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.page-header {
+  padding: 5em;
+  background-color: white;
+  border-bottom: .1em solid rgba(54, 48, 49, 0.2);
+}
+
+.page-header h2 {
+  font-size: 3em;
+}
+
+.page-header h5 {
+  font-size: 1em;
+  color: rgba(54, 48, 49, 1.0);
+  font-weight: 400;
+}
+
+/*--------------Nav Module-------------------*/
+.nav-horizontal li {
+  display: block;
+}
+
+.nav-vertical li {
+  width: 7em;
+  list-style: none;
+}
+
+.nav-vertical .active {
+  border: .1em solid rgba(210, 128, 73, 1.0);
+}
+
+/*--------------Contact Module-------------------*/
+.subscribe-form input{
+  display: inline-block
+}
+
+#subscribe {
+  display: inline-block;
+  padding: .2em .5em .2em .5em;
+  border-radius: 0;
+  font-size: .95em;
+}
+
+/*--------------Blog Module-------------------*/
+.blog-post {
+  padding: 0 0 1em 0;
+  background-color: rgba(240, 233, 194, 1.0);
+  border-bottom: .1em solid rgba(54, 48, 49, 0.2);
+}
+
+.blog-header {
+  text-align: center;
+}
+
+.blog-header h2 {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.blog-written-content {
+  padding: 1em 3em 1em 3em;
+  text-align: justify;
+  font-weight: 200;
+  color: rgba(54, 48, 49, 1.0);
+  background-color: rgba(255, 255, 255, 1.0);
+}

@@ -47,13 +47,15 @@
 
 /*--------------Contact Module-------------------*/
 .subscribe-form input{
-  display: inline-block
+  display: inline-block;
+  padding: .1em;
 }
 
 #subscribe-btn {
   display: inline-block;
   padding: .2em .5em .2em .5em;
-  border-radius: 0;
+  border: ;
+  border-radius: .5;
   font-size: .95em;
 }
 

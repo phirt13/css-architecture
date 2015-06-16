@@ -6,12 +6,13 @@ button:hover {
 
 /*--------------Nav State-------------------*/
 nav li:hover {
+  cursor: pointer;
   /*font-weight: 500;*/
   color: white;
-  background-color: rgba(210, 128, 73, 1.0);
-  border-top: .1em solid rgba(178, 80, 36, 1.0);
-  border-left: .1em solid rgba(178, 80, 36, 1.0);
-  border-right: .1em solid rgba(178, 80, 36, 1.0);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: .1em solid rgba(178, 80, 36, 0.0);
+  border-left: .1em solid rgba(178, 80, 36, 0.0);
+  border-right: .1em solid rgba(178, 80, 36, 0.0);
 }
 
 .nav-horizontal .active {

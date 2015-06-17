@@ -4,29 +4,35 @@
   padding: 3em;
   border: .1em solid rgba(0, 0, 0, 0.2);
 }
-
+.bit-3 {
+  border: 1px solid black;
+}
 /*--------------Header Module-------------------*/
 .app-header {
   background-color: rgba(54, 48, 49, 1.0);
   padding: 1em 0 0 1em;
   border-bottom: .2em solid rgba(178, 80, 36, 1.0);
 }
-
+.app-header img{
+  vertical-align: top;
+}
 .app-header h1 {
+  margin: .4em 0 0 .1em;
   display: inline-block;
   vertical-align: top;
-  font-size: 3em;
+  font-size: 2.7em;
   font-weight: 800;
 }
 
 .page-header {
-  padding: 5em;
+  padding: 6em;
   background-color: white;
   border-bottom: .1em solid rgba(54, 48, 49, 0.2);
 }
 
 .page-header h2 {
-  font-size: 3em;
+  font-size: 3.2em;
+  font-weight: 400;
 }
 
 .page-header h5 {
@@ -35,7 +41,7 @@
   font-weight: 400;
 }
 
-/*--------------Nav Module-------------------*/
+/*--------------Nav Modules-------------------*/
 .nav-horizontal li {
   display: block;
 }
@@ -45,7 +51,10 @@
   list-style: none;
 }
 
-/*--------------Contact Module-------------------*/
+/*--------------Form Modules-------------------*/
+.contact-form {
+  padding: 2em 0 2em 0;
+}
 .subscribe-form input{
   display: inline-block;
   padding: .1em;
@@ -59,10 +68,8 @@
   font-size: .95em;
 }
 
-/*--------------Blog Module-------------------*/
+/*--------------Writing Modules-------------------*/
 .blog-post {
-  padding: 0 0 1em 0;
-  background-color: rgba(240, 233, 194, 1.0);
   border-bottom: .1em solid rgba(54, 48, 49, 0.2);
 }
 
@@ -75,10 +82,19 @@
   font-size: 2em;
 }
 
-.blog-written-content {
-  padding: 1em 3em 1em 3em;
+.text-content {
+  padding: 1em 2em 1em 2em;
   text-align: justify;
   font-weight: 200;
   color: rgba(54, 48, 49, 1.0);
   background-color: rgba(255, 255, 255, 1.0);
+}
+
+.footer-text {
+  font-size: .7em;
+}
+/*--------------Footer-------------------*/
+.footer {
+  color: white;
+  padding: 2em;
 }

@@ -378,7 +378,7 @@ input[type="search"]::-webkit-search-decoration {
 
 fieldset {
   border: 1px solid #c0c0c0;
-  margin: 0 2px;
+  margin: 0;
   padding: 0.35em 0.625em 0.75em;
 }
 
@@ -431,10 +431,15 @@ th {
 
 /*--------------App Base-------------------*/
 body {
-  width: 100%;
   font-family: 'Open Sans', sans-serif;
   color: rgba(54, 48, 49, 1.0);
   background-color: rgba(239, 235, 233, 1.0);
+}
+
+article {
+  background-color: rgba(240, 233, 194, 1.0);
+  padding: 2em 0 2em 0;
+  overflow: auto;
 }
 
 h1 {
@@ -443,6 +448,10 @@ h1 {
 
 h2 {
   color: rgba(99, 143, 67, 1.0)
+}
+
+h3 {
+  color: rgba(54, 48, 49, 1.0);
 }
 
 hr {
@@ -465,12 +474,17 @@ button {
   border: .1em solid rgba(178, 80, 36, 1.0);
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /*--------------Nav Base-------------------*/
 nav li{
   font-size: 1em;
   font-weight: 300;
   color: white;
-  padding: 1em;
+  padding: .7em;
   border-top: .1em solid rgba(178, 80, 36, 0.0);
   border-left: .1em solid rgba(178, 80, 36, 0.0);
   border-right: .1em solid rgba(178, 80, 36, 0.0);
@@ -478,7 +492,6 @@ nav li{
 
 /*--------------Contact Base-------------------*/
 form {
-  padding:2em;
   background-color: rgba(240, 233, 194, 1.0);
 }
 
@@ -498,4 +511,12 @@ label {
 
 textarea {
   border: .1em solid rgba(54, 48, 49, 0.2);
+}
+
+/*--------------Footer Base-------------------*/
+
+footer {
+  margin-top: 2em;
+  border-top: .1em solid rgba(54, 48, 49, 0.2);
+  background-color: rgba(99, 143, 67, 1.0);
 }

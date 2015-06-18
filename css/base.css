@@ -466,10 +466,10 @@ img {
 }
 
 button {
-  padding: .5em;
+  padding: .5em 1em .5em 1em;
   font-size: 1.4em;
-  color: white;
-  background-color: rgba(178, 80, 36, 1.0);
+  color: rgba(178, 80, 36, 1.0);
+  background-color: rgba(178, 80, 36, 0.0);
   border-radius: .5em;
   border: .1em solid rgba(178, 80, 36, 1.0);
 }
@@ -485,9 +485,7 @@ nav li{
   font-weight: 300;
   color: white;
   padding: .7em;
-  border-top: .1em solid rgba(178, 80, 36, 0.0);
-  border-left: .1em solid rgba(178, 80, 36, 0.0);
-  border-right: .1em solid rgba(178, 80, 36, 0.0);
+  border: .1em solid rgba(178, 80, 36, 0.0);
 }
 
 /*--------------Contact Base-------------------*/
@@ -516,7 +514,7 @@ textarea {
 /*--------------Footer Base-------------------*/
 
 footer {
-  margin-top: 2em;
+  padding: 3em;
   border-top: .1em solid rgba(54, 48, 49, 0.2);
   background-color: rgba(99, 143, 67, 1.0);
 }

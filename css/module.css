@@ -1,60 +1,87 @@
-/*--------------App Module-------------------*/
-/*This following style rule is for the stylesheet */
-.component-section {
-  padding: 3em;
-  border: .1em solid rgba(0, 0, 0, 0.2);
-}
-.bit-3 {
-  border: 1px solid black;
-}
+/*After testing the app scales fine until smart phone size
+refab for smart phones include below.  Each module requiring refab
+has its on respective @media query so that cascade flows correctly.
+In the future scaling from mobile up will be a better option*/
+
 /*--------------Header Module-------------------*/
 .app-header {
   background-color: rgba(54, 48, 49, 1.0);
   padding: 1em 0 0 1em;
   border-bottom: .2em solid rgba(178, 80, 36, 1.0);
 }
-.app-header img{
+
+.app-header .main-logo{
   vertical-align: top;
 }
-.app-header h1 {
-  margin: .4em 0 0 .1em;
+
+.app-header .logo-title {
+  font-family: 'Bebas Neue', 'Open Sans', sans-serif;
   display: inline-block;
   vertical-align: top;
-  font-size: 2.7em;
+  font-size: 3em;
   font-weight: 800;
 }
 
 .page-header {
+  text-align: center;
   padding: 6em;
   background-color: white;
   border-bottom: .1em solid rgba(54, 48, 49, 0.2);
 }
 
-.page-header h2 {
+.page-header .page-header-title {
   font-size: 3.2em;
   font-weight: 400;
 }
 
-.page-header h5 {
+.page-header .page-header-subtitle {
   font-size: 1em;
   color: rgba(54, 48, 49, 1.0);
   font-weight: 400;
 }
 
-/*--------------Nav Modules-------------------*/
-.nav-horizontal li {
-  display: block;
-}
+@media (min-width: 5em) and (max-width: 30em) {
+  .app-header {
+    text-align: center;
+    padding: 0;
+  }
 
-.nav-vertical li {
+  .app-header .logo-title {
+    font-size: 3em;
+  }
+
+  .page-header {
+    padding: 2em;
+  }
+
+  .page-header .page-header-title {
+    font-size: 3.0em;
+    font-weight: 400;
+  }
+}
+/*--------------Window Box Modules-------------------*/
+.window-box-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 300;
+  color: rgba(54, 48, 49, 0.5)
+}
+/*--------------Nav Modules-------------------*/
+.nav-vertical .nav-link {
   width: 7em;
   list-style: none;
 }
 
 /*--------------Form Modules-------------------*/
+.subscribe-form {
+  text-align: center;
+}
+
+.subscribe-form,
 .contact-form {
   padding: 2em 0 2em 0;
 }
+
 .subscribe-form input{
   display: inline-block;
   padding: .1em;
@@ -63,25 +90,27 @@
 #subscribe-btn {
   display: inline-block;
   padding: .2em .5em .2em .5em;
-  border: ;
   border-radius: .5;
   font-size: .95em;
 }
 
 /*--------------Writing Modules-------------------*/
-.blog-post {
-  border-bottom: .1em solid rgba(54, 48, 49, 0.2);
+.blog-post-break {
+  border: .1em solid rgba(54, 48, 49, 0.0);
 }
 
 .blog-header {
   text-align: center;
 }
 
-.blog-header h2 {
+.blog-header .blog-title {
   font-weight: 800;
   font-size: 2em;
 }
 
+.blog-header .blog-post-author {
+  font-weight: 600;
+}
 .text-content {
   padding: 1em 2em 1em 2em;
   text-align: justify;
@@ -90,11 +119,30 @@
   background-color: rgba(255, 255, 255, 1.0);
 }
 
+.p-break {
+  margin-top: 1em;
+}
+
 .footer-text {
   font-size: .7em;
 }
+
+@media (min-width: 5em) and (max-width: 30em) {
+  .text-content {
+    text-align: justify;
+    font-size: .8em;
+    padding: 1em;
+  }
+}
+
+/*--------------Icon Modules-------------------*/
+.icons {
+  font-size: 1.6em;
+  color: white;
+}
+
 /*--------------Footer-------------------*/
 .footer {
   color: white;
-  padding: 2em;
+  padding: 0em;
 }

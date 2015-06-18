@@ -16,7 +16,7 @@
 
 [class*='grid-'] {
   float: left;
-  padding: 0.3em;
+  padding: 0.7em;
   /*overflow: auto;*/
 }
 
@@ -100,15 +100,29 @@
   .grid-1, .grid-2, .grid-3, .grid-5, .grid-7, .grid-9, .grid-11 {
     width: 100%; } }
 
+@media (min-width: 5em) and (max-width: 30em) {
+    [class*='grid-'] {
+      padding: 1em 0 1em 0;
+    }
+  }
 /*@media (min-width: 50em) and (max-width: 68.75em) {
   .grid-2, .grid-7 {
     width: 100%; }
   .grid-4, .grid-8, .grid-10, .grid-12 {
     width: 50%; } }*/
+
+/*After testing the app scales fine until smart phone size
+refab for smart phones include below.  Each module requiring refab
+has its on respective @media query so that cascade flows correctly.
+In the future scaling from mobile up will be a better option*/
+
+
+
 /*--------------App Layout-------------------*/
 body {
   width: 100%;
 }
+
 main {
   width: 90%;
   margin-right: auto;
@@ -128,39 +142,87 @@ hr {
   margin-top: 1.2em;
 }
 
-/*--------------Header Layout-------------------*/
-.app-header h1 {
-  margin-bottom: 0;
+@media (min-width: 5em) and (max-width: 30em) {
+  main {
+    width: 100%;
+  }
 }
-
+/*--------------Header Layout-------------------*/
 .page-header {
-  text-align: center;
   margin-bottom: 2em;
 }
+
+.app-header .logo-title {
+  margin: .65em 0 0 .2em;
+}
+
+.hidden-break-mobile {
+  display: none;
+}
+
+@media (min-width: 5em) and (max-width: 30em) {
+  .app-header .main-logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .app-header .logo-title {
+    margin: .2em 0 0 0;
+    display: block;
+  }
+}
+/*--------------Window Box Modules-------------------*/
+.window-box-title {
+  margin-bottom: 1em;
+}
+
 /*--------------Nav Layout-------------------*/
-.nav-horizontal li {
+nav {
   float: right;
 }
-.nav-vertical li {
+
+.nav-horizontal {
+  overflow: auto;
+}
+
+ul li {
+  overflow: auto;
+}
+
+.nav-horizontal li {
+  float: left;
+}
+
+.nav-vertical .nav-link {
   width: 7em;
 }
 
-/*--------------Contact Layout-------------------*/
-form {
-  padding: 2em;
+@media (min-width: 5em) and (max-width: 30em) {
+  nav {
+    float: none;
+    margin: .2em 0 0 .2em;
+  }
+  .nav-horizontal,
+  .nav-horizontal li {
+    float: none;
+    display: block;
+  }
 }
-
+/*--------------Form Layout-------------------*/
 label, input {
   margin-top: .9em
 
 }
+
 textarea {
   width: 100%;
   min-height: 10em;
   margin: .9em 0 .9em 0;
 }
+
 .subscribe-form {
-  text-align: center;
+
   clear: both;
 }
 
@@ -172,6 +234,7 @@ textarea {
 }
 
 .blog-image {
+  width: 70%;
   margin-bottom: .5em;
 }
 
@@ -179,15 +242,36 @@ textarea {
   margin-bottom: 2em;
 }
 
-.blog-header h2 {
+.blog-header .blog-title {
   margin: .1em;
 }
 
+.blog-header .blog-post-author {
+  margin-top: 2em;
+}
 .blog-p {
   margin: 1em 0 1em 0;
 }
 
+.blog-post-break {
+  margin: .5em 0 .5em 0;
+}
+
+@media (min-width: 5em) and (max-width: 30em) {
+  .blog-post {
+    width: 100%;
+  }
+
+  .blog-image {
+    width: 100%;
+  }
+}
 /*--------------Footer Layout-------------------*/
+
+footer {
+  margin-top: 2.7em;
+}
+
 .footer {
   text-align: center;
   width: 30%;
@@ -198,8 +282,16 @@ textarea {
 
 .icons {
   display: inline-block;
+  margin-right: .2em;
+  margin-left: .2em;
 }
 
 .footer-text {
   margin-top: 1.5em;
+}
+
+@media (min-width: 0em) and (max-width: 30em) {
+  .footer {
+    width: 100%;
+  }
 }

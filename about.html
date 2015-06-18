@@ -9,9 +9,8 @@
 
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link type="text/css" rel="stylesheet" href="css/base.css">
     <link type="text/css" rel="stylesheet" href="css/fonts.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="css/base.css">
     <link type="text/css" rel="stylesheet" href="css/layout.css">
     <link type="text/css" rel="stylesheet" href="css/module.css">
     <link type="text/css" rel="stylesheet" href="css/state.css">
@@ -22,44 +21,48 @@
   <body class="frame">
 
     <header role="banner">
-       <section class="app-header">
+      <section class="app-header">
         <img alt="Red Panda" class="main-logo" id="" src="pics/red_panda.png"/>
-        <h1>RED PANDA</h1>
+        <h1 class="logo-title">RED PANDA</h1>
         <section class="nav-horizontal">
           <nav>
             <ul>
-              <li>
-                <a href="contact.html">Contact</a>
+              <li class="nav-link">
+                <a href="index.html">Home</a>
               </li>
-              <li>
-                <a href="blog.html">Blog</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li class="active">
+              <li class="nav-link-active">
                 <a href="donate.html">Donate</a>
               </li>
-              <li>
-                <a href="index.html">Home</a>
+              <li class="nav-link">
+                <a href="about.html">About</a>
+              </li>
+              <li class="nav-link">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="nav-link">
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
           </nav>
         </section>
       </section>
       <section class="page-header">
-        <h2>About Us</h2>
-        <h5>This is some description about the page</h5>
+        <h2 class="page-header-title">About Us</h2>
+        <h5 class="page-header-subtitle">This is some description about the page</h5>
       </section>
     </header>
 
     <main role="main">
-      <form class="subscribe-form" role="subscribe form" >
-        <fieldset>
-          <input aria-label="Email Field" type="email" value="" placeholder="you@gmail.com" required/>
-          <button id="subscribe-btn">Stay Informed</button>
-        </fieldset>
-      </form>
+      <section class="grid-3">
+        <form class="window-box subscribe-form" role="subscribe form">
+          <h3 class="window-box-title">Subscribe</h3>
+          <p class="text-content">Subscribe to our newsletter and recieve news about Red Panda and conservation efforts world-wide.</p>
+          <fieldset>
+            <input aria-label="Email Field" type="email" value="" placeholder="you@gmail.com" required/>
+            <button id="subscribe-btn">Stay Informed</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer>
       <section class="footer">

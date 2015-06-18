@@ -455,7 +455,7 @@ h3 {
 }
 
 hr {
-  border-top: 1px solid rgba(54, 48, 49, 0.2);
+  border-top: .1em solid rgba(54, 48, 49, 0.2);
   border-right: none;
   border-bottom: none;
   border-left: none;

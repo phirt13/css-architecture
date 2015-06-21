@@ -6,7 +6,7 @@ button:hover {
 }
 
 /*--------------Header State-------------------*/
-.page-header-title {
+/*.page-header-title {
     animation: slideDown 1s linear;
   -webkit-animation: slideDown 1s linear;
 
@@ -63,8 +63,7 @@ button:hover {
   100% {
     -webkit-transform: translateY(0%);
   }
-}
-
+}*/
 
 /*--------------Nav State-------------------*/
 .nav-link-active:hover {

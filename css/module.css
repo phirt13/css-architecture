@@ -29,12 +29,12 @@ In the future scaling from mobile up will be a better option*/
   border-bottom: .1em solid rgba(54, 48, 49, 0.2);
 }
 
-.page-header .page-header-title {
+.page-header-title {
   font-size: 3.2em;
   font-weight: 400;
 }
 
-.page-header .page-header-subtitle {
+.page-header-subtitle {
   font-size: 1em;
   color: rgba(54, 48, 49, 1.0);
   font-weight: 400;
@@ -60,14 +60,36 @@ In the future scaling from mobile up will be a better option*/
   }
 }
 /*--------------Window Box Modules-------------------*/
-
+.window-box {
+  padding: 1em 0 1em 0;
+  transition-property: background;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
 .window-box-title {
   text-align: center;
-  font-size: 2em;
+  padding: 0 0 .5em 0;
+  font-size: 2.2em;
   font-weight: 300;
-  color: rgba(54, 48, 49, 0.5)
+  color: rgba(54, 48, 49, 0.7);
+  transition-property: color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+.window-image {
+  background-color: white;
+  z-index: 0
+}
+
+.window-box .text-content {
 }
 /*--------------Nav Modules-------------------*/
+.nav-link,
+.nav-link-active {
+  transition-property: background;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
 .nav-vertical .nav-link {
   width: 7em;
   list-style: none;
@@ -80,7 +102,7 @@ In the future scaling from mobile up will be a better option*/
 
 .subscribe-form,
 .contact-form {
-  padding: 2em 0 2em 0;
+  padding: 1em 0 1em 0;
 }
 
 .subscribe-form input{
@@ -140,6 +162,9 @@ In the future scaling from mobile up will be a better option*/
 .icons {
   font-size: 1.6em;
   color: white;
+  transition-property: color;
+  transition-duration: .15s;
+  transition-timing-function: linear;
 }
 
 /*--------------Footer-------------------*/

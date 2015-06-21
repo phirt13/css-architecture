@@ -125,6 +125,7 @@ body {
 
 main {
   width: 90%;
+  max-width:55em;
   margin-right: auto;
   margin-left: auto;
   overflow: auto;
@@ -173,10 +174,10 @@ hr {
   }
 }
 /*--------------Window Box Modules-------------------*/
-.window-box-title {
-  margin-bottom: 1em;
+.window-box-image {
+  display: block;
+  width: 100%;
 }
-
 /*--------------Nav Layout-------------------*/
 nav {
   float: right;

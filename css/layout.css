@@ -221,11 +221,15 @@ textarea {
   margin: .9em 0 .9em 0;
 }
 
-.subscribe-form {
-
-  clear: both;
+.subscribe-form-input,
+#subscribe-btn {
+  display: block;
+  width: 100%;
 }
 
+#subscribe-btn {
+  margin-top: .5em;
+}
 /*--------------Blog Layout-------------------*/
 .blog-post {
   width: 80%;

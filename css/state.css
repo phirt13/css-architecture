@@ -5,8 +5,12 @@ button:hover {
   background-color: rgba(178, 80, 36, 1.0);
 }
 
+/*--------------Header State-------------------*/
+
 /*--------------Nav State-------------------*/
-.nav-link-active:hover,
+.nav-link-active:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .nav-link:hover {
   cursor: pointer;
   /*font-weight: 500;*/
@@ -28,9 +32,15 @@ button:hover {
 }
 /*--------------Window-Box States-------------------*/
 .window-box:hover {
-  background-color: rgba(54, 48, 49, 0.3)
+  background-color: rgba(54, 48, 49, 0.3);
 }
 .window-box:hover .window-box-title {
   color: white;
+}
 
-}`
+
+/*--------------Icon States-------------------*/
+.icons:hover {
+  cursor: pointer;
+  color: rgba(178, 80, 36, 1.0);
+}

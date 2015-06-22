@@ -102,18 +102,13 @@
 
 @media (min-width: 5em) and (max-width: 30em) {
     [class*='grid-'] {
-      padding: .2em 0 .2em 0;
+      padding: .1em 0 .1em 0;
     }
   }
-/*@media (min-width: 50em) and (max-width: 68.75em) {
-  .grid-2, .grid-7 {
-    width: 100%; }
-  .grid-4, .grid-8, .grid-10, .grid-12 {
-    width: 50%; } }*/
 
 /*After testing the app scales fine until smart phone size
 refab for smart phones include below.  Each module requiring refab
-has its on respective @media query so that cascade flows correctly.
+has its own @media query so that cascade flows correctly.
 In the future scaling from mobile up will be a better option*/
 
 
@@ -124,7 +119,8 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 80%;
+  max-width:100em;
   margin-right: auto;
   margin-left: auto;
   overflow: auto;
@@ -147,9 +143,9 @@ hr {
     width: 100%;
   }
 }
+
 /*--------------Header Layout-------------------*/
 .page-header {
-  margin-bottom: 2em;
 }
 
 .app-header .logo-title {
@@ -172,9 +168,11 @@ hr {
     display: block;
   }
 }
+
 /*--------------Window Box Modules-------------------*/
-.window-box-title {
-  margin-bottom: 1em;
+.window-box-image {
+  display: block;
+  width: 100%;
 }
 
 /*--------------Nav Layout-------------------*/
@@ -209,6 +207,7 @@ ul li {
     display: block;
   }
 }
+
 /*--------------Form Layout-------------------*/
 label, input {
   margin-top: .9em
@@ -221,20 +220,26 @@ textarea {
   margin: .9em 0 .9em 0;
 }
 
-.subscribe-form {
+.subscribe-form-input,
+#subscribe-btn {
+  display: block;
+  width: 100%;
+}
 
-  clear: both;
+#subscribe-btn {
+  margin-top: .5em;
 }
 
 /*--------------Blog Layout-------------------*/
 .blog-post {
   width: 80%;
+  max-width: 50em;
   margin-right: auto;
   margin-left: auto;
 }
 
 .blog-image {
-  width: 70%;
+  width: 80%;
   margin-bottom: .5em;
 }
 
@@ -262,16 +267,15 @@ textarea {
     width: 100%;
   }
 
+  .blog-post-break {
+    margin: .1em 0 .1em 0;
+  }
   .blog-image {
     width: 100%;
   }
 }
+
 /*--------------Footer Layout-------------------*/
-
-footer {
-  margin-top: 2.7em;
-}
-
 .footer {
   text-align: center;
   width: 30%;

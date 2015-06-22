@@ -436,6 +436,9 @@ body {
   background-color: rgba(239, 235, 233, 1.0);
 }
 
+main {
+  padding: 3em 0 3em 0;
+}
 article {
   background-color: rgba(240, 233, 194, 1.0);
   padding: 2em 0 2em 0;

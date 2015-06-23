@@ -1,13 +1,18 @@
-/*--------------App State-------------------*/
+/*--------------App States-------------------*/
 button:hover {
   color: white;
   border: .1em solid rgba(178, 80, 36, 1.0);
   background-color: rgba(178, 80, 36, 1.0);
 }
 
-/*--------------Header State-------------------*/
+/*the below state is for any modules that are to be obstructed
+through JS.  This way if JS is dis-abled the content is still
+visible. */
+.hidden {
+  display: none;
+}
 
-/*--------------Nav State-------------------*/
+/*--------------Nav States-------------------*/
 .nav-link-active:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -30,6 +35,42 @@ button:hover {
     border: .1em solid rgba(178, 80, 36, 1.0);
   }
 }
+
+/*--------------Form States-------------------*/
+.create-account:hover {
+  cursor: pointer;
+  color: rgba(178, 80, 36, 1.0);
+}
+
+
+
+.fadeIn {
+  animation: fadeIn 1.0s linear;
+  -webkit-animation: fadeIn 1.0s linear;
+
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 /*--------------Window-Box States-------------------*/
 .window-box:hover {
   background-color: rgba(54, 48, 49, 0.3);

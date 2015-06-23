@@ -464,8 +464,17 @@ hr {
   border-left: none;
 }
 
+strong {
+  font-weight: 400;
+  color: rgba(178, 80, 36, 0.8);
+}
+
 img {
   border: none;
+}
+
+form {
+  padding: 1em 0 1em 0;
 }
 
 button {
@@ -497,7 +506,7 @@ form {
 }
 
 fieldset {
-  padding: 0 1em 1em 1em;
+  padding: 0 2em 1em 2em;
   background-color: white;
   border: none;
 }

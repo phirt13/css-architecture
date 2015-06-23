@@ -42,8 +42,6 @@ visible. */
   color: rgba(178, 80, 36, 1.0);
 }
 
-
-
 .fadeIn {
   animation: fadeIn 1.0s linear;
   -webkit-animation: fadeIn 1.0s linear;

@@ -1,27 +1,38 @@
-'use strict';
+// Luke's Exciting jQuery
 
-(function() {
+$("#create-account-form").addClass("hidden")
 
-  var createFieldset = document.getElementById('create-account-form');
-  createFieldset.setAttribute('class', 'hidden');
+$(".create-account").on("click", function() {
+  $("#create-account-form").removeClass("hidden");
+  $("#create-account-form").addClass("fadeIn");
+})
 
-  var showCreate = function(e) {
-    if (!e) {
-      e = window.event;
-    }
+// Philip's Boring Javascript
 
-    createFieldset.setAttribute('class', 'fadeIn');
+// 'use strict';
 
-    if (e.preventDefault) {
-      e.preventDefault();
-    } else {
-      e.returnValue = false;
-    }
-  }
+// (function() {
 
-  var createAccount = document.getElementById('create');
-  createAccount.addEventListener('click', function(e) {
-    showCreate(e);
-  }, false);
+//   var createFieldset = document.getElementById('create-account-form');
+//   createFieldset.setAttribute('class', 'hidden');
 
-})();
+//   var showCreate = function(e) {
+//     if (!e) {
+//       e = window.event;
+//     }
+
+//     createFieldset.setAttribute('class', 'fadeIn');
+
+//     if (e.preventDefault) {
+//       e.preventDefault();
+//     } else {
+//       e.returnValue = false;
+//     }
+//   }
+
+//   var createAccount = document.getElementById('create');
+//   createAccount.addEventListener('click', function(e) {
+//     showCreate(e);
+//   }, false);
+
+// })();

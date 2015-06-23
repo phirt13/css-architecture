@@ -131,9 +131,6 @@ nav {
   overflow: auto;
 }
 
-article {
-
-}
 hr {
   margin-top: 1.2em;
 }
@@ -217,7 +214,11 @@ label, input {
 textarea {
   width: 100%;
   min-height: 10em;
-  margin: .9em 0 .9em 0;
+  margin: .9em 0 0 0;
+}
+
+button {
+  margin: .9em 0 0 0;
 }
 
 .subscribe-form-input,
@@ -254,6 +255,7 @@ textarea {
 .blog-header .blog-post-author {
   margin-top: 2em;
 }
+
 .blog-p {
   margin: 1em 0 1em 0;
 }

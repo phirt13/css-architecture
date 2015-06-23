@@ -59,6 +59,7 @@ In the future scaling from mobile up will be a better option*/
     font-weight: 400;
   }
 }
+
 /*--------------Window Box Modules-------------------*/
 .window-box {
   padding: 1em 0 1em 0;
@@ -66,6 +67,7 @@ In the future scaling from mobile up will be a better option*/
   transition-duration: .2s;
   transition-timing-function: linear;
 }
+
 .window-box-title {
   text-align: center;
   padding: 0 0 .5em 0;
@@ -76,13 +78,12 @@ In the future scaling from mobile up will be a better option*/
   transition-duration: .2s;
   transition-timing-function: linear;
 }
+
 .window-image {
   background-color: white;
   z-index: 0
 }
 
-.window-box .text-content {
-}
 /*--------------Nav Modules-------------------*/
 .nav-link,
 .nav-link-active {
@@ -98,11 +99,6 @@ In the future scaling from mobile up will be a better option*/
 /*--------------Form Modules-------------------*/
 .subscribe-form {
   text-align: center;
-}
-
-.subscribe-form,
-.contact-form {
-  padding: 1em 0 1em 0;
 }
 
 .subscribe-form input{

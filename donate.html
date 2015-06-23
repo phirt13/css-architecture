@@ -25,12 +25,12 @@
         <img alt="Red Panda" class="main-logo" id="" src="pics/red_panda.png"/>
         <h1 class="logo-title">RED PANDA</h1>
         <section class="nav-horizontal">
-          <nav>
+          <nav id="nav-menu">
             <ul>
               <li class="nav-link">
                 <a href="index.html">Home</a>
               </li>
-              <li class="nav-link-active">
+              <li class="nav-link">
                 <a href="donate.html">Donate</a>
               </li>
               <li class="nav-link">
@@ -54,27 +54,31 @@
 
     <main role="main">
       <section class="grid-2">
-        <form class="contact-form window-box" role="subscribe form">
+        <form class="window-box" id="login-form" role="subscribe form">
           <h3 class="window-box-title">Hello!</h3>
           <section class="text-content">
           <p>Please login to make a donation.</p>
           </section>
           <fieldset>
-              <label for="name">Account Name</label>
-              <input aria-label="Account Name" name="name" id="account-name" type="text" value="" placeholder="account name" required/>
-              <label for="password">Password</label>
-              <input aria-label="Password" name="password" id="Password" type="text" value="" placeholder="password" required/>
+            <label for="name">Account Name</label>
+            <input aria-label="Account Name" name="name" id="account-name" type="text" value="" placeholder="account name" required/>
+            <label for="password">Password</label>
+            <input aria-label="Password" name="password" id="Password" type="text" value="" placeholder="password" required/>
+            <button id="login">Login</button>
           </fieldset>
           <section class="text-content">
-          <p class="p-break">If this is your first time donating please create an account.</p>
+          <p>If this is your first time donating please <strong class="create-account" id="create">create an account</strong>.</p>
           </section>
-          <fieldset>
-              <label for="name">Your Name</label>
-              <input aria-label="Your Name" name="name" id="name" type="text" value="" placeholder="your name" required/>
-              <label for="name">User Name</label>
-              <input aria-label="User Name" name="user-name" id="user-name" type="text" value="" placeholder="user name" required/>
-              <label for="password">Password</label>
-              <input aria-label="Password" name="password" id="Password" type="text" value="" placeholder="password" required/>
+          <fieldset id="create-account-form">
+            <label for="name">Your Name</label>
+            <input aria-label="Your Name" name="name" id="name" type="text" value="" placeholder="your name" required/>
+            <label for="name">User Name</label>
+            <input aria-label="User Name" name="user-name" id="user-name" type="text" value="" placeholder="user name" required/>
+            <label for="password">Password</label>
+            <input aria-label="Password" name="password" id="Password" type="text" value="" placeholder="password" required/>
+            <label for="password">Confirm Password</label>
+            <input aria-label="Confirm Password" name="password" id="Password" type="text" value="" placeholder="confirm password" required/>
+            <button id="join">Join</button>
           </fieldset>
           </fieldset>
         </form>
@@ -93,7 +97,8 @@
           <p class="footer-text">&copy; Copyright 2015</p>
       </section>
     </footer>
-
+  <script type="text/javascript" src="js/nav.js"></script>
+  <script type="text/javascript" src="js/forms.js"></script>
   </body>
 
 </html>

@@ -126,7 +126,7 @@ main {
   overflow: auto;
 }
 
-nav {
+nav
   margin-right: .8em;
   overflow: auto;
 }
@@ -142,7 +142,8 @@ hr {
 }
 
 /*--------------Header Layout-------------------*/
-.page-header {
+.app-header .main-logo {
+  margin-left: 1em;
 }
 
 .app-header .logo-title {
@@ -193,6 +194,15 @@ ul li {
   width: 7em;
 }
 
+.nav-arrow-up,
+.nav-arrow-down {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav-arrow-down {
+  margin-bottom:
+}
 @media (min-width: 5em) and (max-width: 30em) {
   nav {
     float: none;
@@ -202,6 +212,10 @@ ul li {
   .nav-horizontal li {
     float: none;
     display: block;
+  }
+
+  .nav-arrow-up {
+    margin-top: .5em;
   }
 }
 

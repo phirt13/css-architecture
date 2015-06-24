@@ -6,12 +6,13 @@ In the future scaling from mobile up will be a better option*/
 /*--------------Header Module-------------------*/
 .app-header {
   background-color: rgba(54, 48, 49, 1.0);
-  padding: 1em 0 0 1em;
+  padding: 1em 0 0 0;
   border-bottom: .2em solid rgba(178, 80, 36, 1.0);
 }
 
 .app-header .main-logo{
   vertical-align: top;
+  margin-left: 1em;
 }
 
 .app-header .logo-title {
@@ -94,6 +95,24 @@ In the future scaling from mobile up will be a better option*/
 .nav-vertical .nav-link {
   width: 7em;
   list-style: none;
+}
+
+@media (min-width: 5em) and (max-width: 30em) {
+  .nav-arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 1.3em solid transparent;
+    border-right: 1.3em solid transparent;
+    border-bottom: 1.3em solid rgba(178, 80, 36, 1.0);
+  }
+
+  .nav-arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 1.3em solid transparent;
+    border-right: 1.3em solid transparent;
+    border-top: 1.3em solid rgba(178, 80, 36, 1.0);
+  }
 }
 
 /*--------------Form Modules-------------------*/

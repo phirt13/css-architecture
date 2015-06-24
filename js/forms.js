@@ -25,3 +25,5 @@
   }, false);
 
 })();
+
+//the 'e' is the event object.  Everything is an object.//

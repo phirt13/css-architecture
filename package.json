@@ -1,0 +1,27 @@
+{
+  "name": "css-architecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phirt13/css-architecture.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phirt13/css-architecture/issues"
+  },
+  "homepage": "https://github.com/phirt13/css-architecture",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.3"
+  },
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}

@@ -1,0 +1,188 @@
+/*After testing the app scales fine until smart phone size
+refab for smart phones include below.  Each module requiring refab
+has its on respective @media query so that cascade flows correctly.
+In the future scaling from mobile up will be a better option*/
+
+/*--------------Header Module-------------------*/
+.app-header {
+  background-color: rgba(54, 48, 49, 1.0);
+  padding: 1em 0 0 0;
+  border-bottom: .2em solid rgba(178, 80, 36, 1.0);
+}
+
+.app-header--main-logo{
+  vertical-align: top;
+}
+
+.app-header .logo-title {
+  font-family: 'Bebas Neue', 'Open Sans', sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.page-header {
+  text-align: center;
+  padding: 6em;
+  background-color: white;
+  border-bottom: .1em solid rgba(54, 48, 49, 0.2);
+}
+
+.page-header-title {
+  font-size: 3.2em;
+  font-weight: 400;
+}
+
+.page-header-subtitle {
+  font-size: 1em;
+  color: rgba(54, 48, 49, 1.0);
+  font-weight: 400;
+}
+
+@media (min-width: 5em) and (max-width: 30em) {
+  .app-header {
+    text-align: center;
+    padding: 0;
+  }
+
+  .app-header .logo-title {
+    font-size: 3em;
+  }
+
+  .page-header {
+    padding: 2em;
+  }
+
+  .page-header .page-header-title {
+    font-size: 3.0em;
+    font-weight: 400;
+  }
+}
+
+/*--------------Window Box Modules-------------------*/
+.window-box {
+  padding: 1em 0 1em 0;
+  transition-property: background;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+
+.window-box-title {
+  text-align: center;
+  padding: 0 0 .5em 0;
+  font-size: 2.2em;
+  font-weight: 300;
+  color: rgba(54, 48, 49, 0.7);
+  transition-property: color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+
+.window-image {
+  background-color: white;
+  z-index: 0
+}
+
+/*--------------Nav Modules-------------------*/
+.nav-link,
+.nav-link-active {
+  transition-property: background;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+.nav-vertical .nav-link {
+  width: 7em;
+  list-style: none;
+}
+
+@media (min-width: 5em) and (max-width: 30em) {
+  .nav-arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 1.3em solid transparent;
+    border-right: 1.3em solid transparent;
+    border-bottom: 1.3em solid rgba(178, 80, 36, 1.0);
+  }
+
+  .nav-arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 1.3em solid transparent;
+    border-right: 1.3em solid transparent;
+    border-top: 1.3em solid rgba(178, 80, 36, 1.0);
+  }
+}
+
+/*--------------Form Modules-------------------*/
+.subscribe-form {
+  text-align: center;
+}
+
+.subscribe-form input{
+  display: inline-block;
+  padding: .1em;
+}
+
+#subscribe-btn {
+  display: inline-block;
+  padding: .2em .5em .2em .5em;
+  border-radius: .5;
+  font-size: .95em;
+}
+
+/*--------------Writing Modules-------------------*/
+.blog-post-break {
+  border: .1em solid rgba(54, 48, 49, 0.0);
+}
+
+.blog-header {
+  text-align: center;
+}
+
+.blog-header .blog-title {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.blog-header .blog-post-author {
+  font-weight: 600;
+}
+.text-content {
+  padding: 1em 2em 1em 2em;
+  text-align: justify;
+  font-weight: 200;
+  color: rgba(54, 48, 49, 1.0);
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.p-break {
+  margin-top: 1em;
+}
+
+.footer-text {
+  font-size: .7em;
+}
+
+@media (min-width: 5em) and (max-width: 30em) {
+  .text-content {
+    text-align: justify;
+    font-size: .8em;
+    padding: 1em;
+  }
+}
+
+/*--------------Icon Modules-------------------*/
+.icons {
+  font-size: 1.6em;
+  color: white;
+  transition-property: color;
+  transition-duration: .15s;
+  transition-timing-function: linear;
+}
+
+/*--------------Footer-------------------*/
+.footer {
+  color: white;
+  padding: 0em;
+}
